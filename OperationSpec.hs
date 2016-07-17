@@ -11,3 +11,6 @@ main = hspec $ do
   describe "subtraction" $ do
     it "should return 1 when subtraction is performed on 3 and 2" $
         Operation.subtract 3 2 `shouldBe` 1
+  describe "multiplication" $ do
+    it "should return 6 when multiplication is performed on 3 and 2" $
+        multiply 3 2 `shouldBe` 6
