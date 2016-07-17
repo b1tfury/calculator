@@ -1,3 +1,7 @@
+##
+This is a sample problem to learn TDD in haskell
+
+
 # Calculator
 
 ## Problem Statement
