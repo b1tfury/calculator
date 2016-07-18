@@ -20,4 +20,6 @@ main = hspec $ do
     it "should return 1.5 when division is performed on 3 and 2" $
         divide 3 2 `shouldBe` 1.5
     it "should return Infinity when denominator is 0" $
-        divide 3 0 `shouldBe` 1 / 0
+        isInfinite (divide 3 0) `shouldBe` True
+    it "should return NaN both numerator and denominator are 0" $
+        isNaN (divide 0 0 ) `shouldBe` True
